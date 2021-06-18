@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e8fa;
+  font-size: 26px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #5e0cbb;
+  color: #8aeeda;
+  margin: 40px;
+  -webkit-box-shadow: 0px 0px 1px black;
+          box-shadow: 0px 0px 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.box::before, .box::after {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.box1:hover {
+  -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
+}
+
+.box2 {
+  position: relative;
+}
+
+.box2:before, .box2:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  left: 0px;
+  opacity: 0;
+}
+
+.box2:before {
+  background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+  bottom: 100%;
+}
+
+.box2:after {
+  background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+  top: 100%;
+}
+
+.box2:hover:before, .box2:hover:after {
+  opacity: 1;
+}
+
+.box3:hover {
+  -webkit-box-shadow: 3px 2px 8px black;
+          box-shadow: 3px 2px 8px black;
+}
+
+.box4 {
+  position: relative;
+}
+
+.box4:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -30px;
+  border-style: solid;
+  border-width: 30px 30px 30px 0px;
+  border-color: transparent #5e0cbb transparent transparent;
+}
+
+.box4:hover:before {
+  left: -30px;
+}
+
+.box5 {
+  position: relative;
+}
+
+.box5:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -30px;
+  border-style: solid;
+  border-width: 0px 30px 30px 30px;
+  border-color: transparent transparent #5e0cbb transparent;
+}
+
+.box5:hover {
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+}
+
+.box5:hover:before {
+  top: -30px;
+}
+
+.box6 {
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.box6:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  background: linear-gradient(45deg, #e2e8fa 45%, #aaa 49%, #ccc 60%, white);
+  left: 0px;
+  bottom: 0px;
+  margin-top: -30px;
+}
+
+.box6:hover:before {
+  width: 65px;
+  height: 65px;
+}
+
+.box7 {
+  position: relative;
+}
+
+.box7:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 15px;
+  left: 5%;
+  top: 100%;
+  background: radial-gradient(ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  opacity: 0;
+}
+
+.box7:hover:before {
+  transform: translateY(10px);
+  opacity: 1;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
+
+.box7:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+/*# sourceMappingURL=style.css.map */
